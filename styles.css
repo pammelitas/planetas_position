@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,27 +9,92 @@ body{
 }
 
 html{
-    font-size: 60%;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .lista-planetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo{
-    background-color: antiquewhite;
     font-size: 2rem;
-    width: 12rem;
-    border-radius: 15px;
+    width: 15rem;
+    border-radius: 0.8px;
     position: relative;
-    top: 30px;
+    top: 1.3rem;
+    color: #fff;
+
+}
+
+.titulo h2{
+    display: flex;
+    justify-content: center;
 }
 
 .planeta{
-
+height: 350px;
+width: 250px;
+font-size: 13px;
+border-radius: 12px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding-bottom: 15px;
 }
 
 img{
     width: 15rem;
     height: 15rem;
+}
+
+#mercurio{
+    background-color: rgb(162, 159, 156);
+    color: #fff;
+}
+
+#venus{
+    background-color: rgb(210, 139, 6);
+    color: #fff;
+}
+
+#tierra{
+    background-color: rgb(33, 54, 157);
+    color: #fff;
+}
+
+#marte{
+    background-color: rgb(185, 69, 43);
+    color: #fff;
+}
+
+#jupiter{
+    background-color: rgb(192, 144, 78);
+    color: #fff;
+}
+
+#saturno{
+    background-color: rgb(201, 160, 167);
+    color: #fff;
+}
+
+#urano{
+    background-color: rgb(121, 165, 170);
+    color: #fff;
+}
+
+#neptuno{
+    background-color: rgb(77, 113, 151);
+    color: #fff;
 }
